@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --cor-primaria: #0A2647;
+  --cor-secundaria: #144272;
+  --cor-terciaria: #205295;
+  --cor-quaternaria: #2C74B3; 
+  --cor-quintenaria: #d7d7d7;
+}
+
+body{
+  background-image: linear-gradient(to right, #fff,#dfdfdf); 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-image: linear-gradient(to right, var(--cor-quaternaria), var(--cor-primaria));
+  flex-direction:row;
+  height: 2%;
+  align-items: center;
+}
+
+#logo{
+  width: 180px;
+  margin-left: 3px;
+}
+#logo:hover{
+  transform: scale(1.05);
+}
+#pesquisar {
+  width: 320px; 
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color:transparent;
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-image: linear-gradient(to right, #fff, var(--cor-quintenaria), #fff);
+    
+}
+#pesquisar::placeholder {
+    
+  color: var(--cor-primaria);
+  outline: none;
+}
+  
+#pesquisar:-ms-input-placeholder {
+  color: var(--cor-primaria);
+}
+  
+#pesquisar::-ms-input-placeholder {
+  color: var(--cor-primaria);
+}
+#pesquisar:hover{
+  transform: scale(1.05);
+}
+
+#botao__busca{
+  background-color: var(--cor-terciaria);
+  border: none;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#lupa{
+  margin-left: 1px;
+  width: 23px;
+  background-color: transparent;
+}
+#lupa:hover{
+    transform: scale(1.1);
+}
+
+.botoes__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+  
+.botoes {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--cor-quaternaria);
+  color: white;
+}
+
+.botoes:hover {
+  background-color: var(--cor-primaria);
+  transform: scale(1.1);
+}
+  
+.botoes:active {
+    background-color: var(--cor-primaria);
+}
+  
+.botoes:first-child {
+    margin-left: 0;
+}
+  
+.botoes:last-child {
+    margin-right: 0;
+}
+
+.categorias {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, var(--cor-secundaria), var(--cor-quaternaria));
+}
+.categorias:hover{
+    transform: scale(1.1);
+}
+  
+.categorias li {
+  margin: 0 10px;
+}
+  
+.nome-categoria {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--cor-quintenaria);
+  font-size: 24px; /* Defina o tamanho da fonte desejado */
+  font-family: 'Roboto Condensed', sans-serif;;
+}
+
+.nome-categoria:hover{
+  transform: scale(1.05);
+}
+  
+.icone {
+  margin-right: 5px;
+  width: 20px; /* Defina a largura do ícone desejada */
+  height: 20px; /* Defina a altura do ícone desejada */
+}
+
+.icone:hover{
+  transform: scale(1.05);
+}
+  
+.cabecalho {
+    height: 100px; 
+}
+
+.botao {
+    margin-left:3px ;
+    display: inline-block;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.botao:hover{
+    transform: scale(1.05);
+}
+
+.div-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: 20%;
+  margin-top: 40px;
+  max-width: 1000px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 20%;
+  display: inline-block;
+  margin-right: 1%;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.item:hover{
+  transform: scale(1.05);
+}
+
+.imagemproduto {
+  flex: 1;
+  min-width: 250px;
+  max-height: 300px;
+  min-height: 300px;
+}
+
+.nome-produto {
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.preco-produto {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.botao-comprar {
+  padding: 12px 25px;
+  background-color: var(--cor-quaternaria);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+}
+
+.botao-comprar:hover {
+  background-color: var(--cor-primaria);
+  transform: scale(1.05);
+}
+
+.botao-comprar:active {
+  background-color: var(--cor-quaternaria);
+}
+
+
+
